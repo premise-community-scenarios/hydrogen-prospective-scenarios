@@ -1,0 +1,669 @@
+production pathways:
+  HWOAE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, wind onshore, ae
+      reference product: hydrogen, gaseous, 30 bar, wind onshore, ae
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Wind Onshore|AE|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Wind Onshore|AE|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Wind Onshore|AE|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Wind Onshore|AE|Conversion Factor
+        includes:
+          technosphere:
+          - stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Wind Onshore|AE
+  HWOPE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, wind onshore, pem
+      reference product: hydrogen, gaseous, 30 bar, wind onshore, pem
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Wind Onshore|PEM|Electricity
+        includes:
+          technosphere:
+            - electricity
+      - variable: Efficiency|Hydrogen|Wind Onshore|PEM|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Wind Onshore|PEM|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Wind Onshore|PEM|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Wind Onshore|PEM
+  HWOSO:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, wind onshore, soec
+      reference product: hydrogen, gaseous, 30 bar, wind onshore, soec
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Wind Onshore|SOEC|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Wind Onshore|SOEC|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Wind Onshore|SOEC|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Wind Onshore|SOEC|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Wind Onshore|SOEC
+  AESTACK:
+    ecoinvent alias:
+      exists in original database: false
+      name: electrolyzer, AE, Stack
+      reference product: electrolyzer, AE, Stack
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|AE|Stack|Steel
+        includes:
+          technosphere:
+          - market for sheet rolling, chromium steel
+          - market for steel, chromium steel 18/8, hot rolled
+    production volume:
+      variable: Production|AE|Stack
+  PEMSTACK:
+    ecoinvent alias:
+      exists in original database: false
+      name: electrolyzer, PEM, Stack
+      reference product: electrolyzer, PEM, Stack
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|PEM|Stack|Iridium
+        includes:
+          technosphere:
+          - market for iridium
+      - variable: Efficiency|PEM|Stack|Platinum
+        includes:
+          technosphere:
+          - market for platinum
+      - variable: Efficiency|PEM|Stack|Titanium
+        includes:
+          technosphere:
+          - market for titanium
+      - variable: Efficiency|PEM|Stack|Nifion
+        includes:
+          technosphere:
+          - market for tetrafluoroethylene
+          - market for sulfuric acid
+      - variable: Efficiency|PEM|Stack|Activated Carbon
+        includes:
+          technosphere:
+          - market for activated carbon, granular
+      - variable: Efficiency|PEM|Stack|Steel
+        includes:
+          technosphere:
+          - market for steel, chromium steel 18/8, hot rolled
+          - market for sheet rolling, chromium steel
+    production volume:
+      variable: Production|PEM|Stack
+  SOECSTACK:
+    ecoinvent alias:
+      exists in original database: false
+      name: electrolyzer, SOEC, Stack
+      reference product: electrolyzer, SOEC, Stack
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|SOEC|Stack|Steel
+        includes:
+          technosphere:
+          - market for steel, chromium steel 18/8, hot rolled
+          - market for sheet rolling, chromium steel
+    production volume:
+      variable: Production|SOEC|Stack
+  HWFAE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, wind offshore, ae
+      reference product: hydrogen, gaseous, 30 bar, wind offshore, ae
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Wind Offshore|AE|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Wind Offshore|AE|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Wind Offshore|AE|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Wind Offshore|AE|Conversion Factor
+        includes:
+          technosphere:
+          - stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Wind Offshore|AE
+  HWFPE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, wind offshore, pem
+      reference product: hydrogen, gaseous, 30 bar, wind offshore, pem
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Wind Offshore|PEM|Electricity
+        includes:
+          technosphere:
+            - electricity
+      - variable: Efficiency|Hydrogen|Wind Offshore|PEM|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Wind Offshore|PEM|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Wind Offshore|PEM|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Wind Offshore|PEM
+  HWFSO:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, wind offshore, soec
+      reference product: hydrogen, gaseous, 30 bar, wind offshore, soec
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Wind Offshore|SOEC|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Wind Offshore|SOEC|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Wind Offshore|SOEC|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Wind Offshore|SOEC|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Wind Offshore|SOEC
+  HSPAE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, solar PV, ae
+      reference product: hydrogen, gaseous, 30 bar, solar PV, ae
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Solar PV|AE|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Solar PV|AE|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Solar PV|AE|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Solar PV|AE|Conversion Factor
+        includes:
+          technosphere:
+          - stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Solar PV|AE
+  HSPPE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, solar PV, pem
+      reference product: hydrogen, gaseous, 30 bar, solar PV, pem
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Solar PV|PEM|Electricity
+        includes:
+          technosphere:
+            - electricity
+      - variable: Efficiency|Hydrogen|Solar PV|PEM|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Solar PV|PEM|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Solar PV|PEM|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Solar PV|PEM
+  HSPSO:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, solar PV, soec
+      reference product: hydrogen, gaseous, 30 bar, solar PV, soec
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Solar PV|SOEC|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Solar PV|SOEC|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Solar PV|SOEC|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Solar PV|SOEC|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Solar PV|SOEC
+  HNUAE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, nuclear, ae
+      reference product: hydrogen, gaseous, 30 bar, nuclear, ae
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Nuclear|AE|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Nuclear|AE|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Nuclear|AE|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Nuclear|AE|Conversion Factor
+        includes:
+          technosphere:
+          - stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Nuclear|AE
+  HNUPE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, nuclear, pem
+      reference product: hydrogen, gaseous, 30 bar, nuclear, pem
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Nuclear|PEM|Electricity
+        includes:
+          technosphere:
+            - electricity
+      - variable: Efficiency|Hydrogen|Nuclear|PEM|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Nuclear|PEM|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Nuclear|PEM|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Nuclear|PEM
+  HNUSO:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, nuclear, soec
+      reference product: hydrogen, gaseous, 30 bar, nuclear, soec
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Nuclear|SOEC|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Nuclear|SOEC|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Nuclear|SOEC|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Nuclear|SOEC|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Nuclear|SOEC
+  HHYAE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, hydro, ae
+      reference product: hydrogen, gaseous, 30 bar, hydro, ae
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Hydro|AE|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Hydro|AE|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Hydro|AE|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Hydro|AE|Conversion Factor
+        includes:
+          technosphere:
+          - stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Hydro|AE
+  HHYPE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, hydro, pem
+      reference product: hydrogen, gaseous, 30 bar, hydro, pem
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Hydro|PEM|Electricity
+        includes:
+          technosphere:
+            - electricity
+      - variable: Efficiency|Hydrogen|Hydro|PEM|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Hydro|PEM|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Hydro|PEM|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Hydro|PEM
+  HHYSO:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, hydro, soec
+      reference product: hydrogen, gaseous, 30 bar, hydro, soec
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Hydro|SOEC|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Hydro|SOEC|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Hydro|SOEC|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Hydro|SOEC|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Hydro|SOEC
+  HGEAE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, grid, ae
+      reference product: hydrogen, gaseous, 30 bar, grid, ae
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Grid|AE|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Grid|AE|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Grid|AE|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Grid|AE|Conversion Factor
+        includes:
+          technosphere:
+          - stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Grid|AE
+  HGEPE:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, grid, pem
+      reference product: hydrogen, gaseous, 30 bar, grid, pem
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Grid|PEM|Electricity
+        includes:
+          technosphere:
+            - electricity
+      - variable: Efficiency|Hydrogen|Grid|PEM|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Grid|PEM|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Grid|PEM|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Grid|PEM
+  HGESO:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, grid, soec
+      reference product: hydrogen, gaseous, 30 bar, grid, soec
+      regionalize: True
+    efficiency:
+      - variable: Efficiency|Hydrogen|Grid|SOEC|Electricity
+        includes:
+          technosphere:
+          - electricity
+      - variable: Efficiency|Hydrogen|Grid|SOEC|Lifespan
+        includes:
+          technosphere:
+          - Stack
+      - variable: Efficiency|Hydrogen|Grid|SOEC|Capacity Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+      - variable: Efficiency|Hydrogen|Grid|SOEC|Conversion Factor
+        includes:
+          technosphere:
+          - Stack
+          - Balance of Plant
+    production volume:
+      variable: Production|Hydrogen|Grid|SOEC
+  HC:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, coal gasification w/o CCS
+      reference product: hydrogen, gaseous, 30 bar, coal gasification w/o CCS
+      regionalize: True
+    efficiency:
+    - variable: Efficiency|Hydrogen|Coal
+      includes:
+        technosphere:
+        - coal
+    production volume:
+      variable: Production|Hydrogen|Coal
+  HCC:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 30 bar, coal gasification w/ CCS
+      reference product: hydrogen, gaseous, 30 bar, coal gasification w/ CCS
+      regionalize: True
+    efficiency:
+    - variable: Efficiency|Hydrogen|Coal-CCS
+      includes:
+        technosphere:
+        - coal
+    production volume:
+      variable: Production|Hydrogen|Coal-CCS
+  HNG:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 25 bar, natural gas SMR w/o CCS
+      reference product: hydrogen, gaseous, 25 bar, natural gas SMR w/o CCS
+      regionalize: True
+    efficiency:
+    - variable: Efficiency|Hydrogen|NG
+      includes:
+        technosphere:
+        - natural gas
+    production volume:
+      variable: Production|Hydrogen|NG
+  HNGC:
+    ecoinvent alias:
+      exists in original database: false
+      name: hydrogen production, gaseous, 25 bar, natural gas SMR w/ CCS
+      reference product: hydrogen, gaseous, 25 bar, natural gas SMR w/ CCS
+      regionalize: True
+    efficiency:
+    - variable: Efficiency|Hydrogen|NG-CCS
+      includes:
+        technosphere:
+        - natural gas
+    production volume:
+      variable: Production|Hydrogen|NG-CCS
+  HBIO:
+    ecoinvent alias:
+      exists in original database: true
+      name: hydrogen production, gaseous, 26 bar, woody biomass gasification w/o CCS, entrained flow gasifier
+      reference product: hydrogen, gaseous, 26 bar, woody biomass gasification w/o CCS, entrained flow gasifier
+      regionalize: True
+    efficiency:
+    - variable: Efficiency|Hydrogen|BIO
+      includes:
+        technosphere:
+        - wood chips
+        biosphere:
+        - Carbon dioxide, non-fossil
+    production volume:
+      variable: Production|Hydrogen|BIO
+  HBIOC:
+    ecoinvent alias:
+      exists in original database: true
+      name: hydrogen production, gaseous, 26 bar, woody biomass gasification w/ CCS, entrained flow gasifier
+      reference product: hydrogen, gaseous, 26 bar, woody biomass gasification w/ CCS, entrained flow gasifier
+      regionalize: True
+    efficiency:
+    - variable: Efficiency|Hydrogen|BIO-CCS
+      includes:
+        technosphere:
+        - wood chips
+        - CO2 capture and compression in biomass gasification
+        - CO2 storage/at H2 production plant, pre, pipeline 400km, storage 3000m
+        biosphere:
+        - Carbon dioxide, non-fossil
+    production volume:
+      variable: Production|Hydrogen|BIO-CCS
+
+markets:
+  - name: market for hydrogen, gaseous (IEA)
+    reference product: hydrogen, gaseous
+    unit: kilogram
+    includes:
+      - HWOAE
+      - HWOPE
+      - HWOSO
+      - HWFAE
+      - HWFPE
+      - HWFSO
+      - HSPAE
+      - HSPPE
+      - HSPSO
+      - HNUAE
+      - HNUPE
+      - HNUSO
+      - HHYAE
+      - HHYPE
+      - HHYSO
+      - HGEAE
+      - HGEPE
+      - HGESO
+      - HC
+      - HCC
+      - HNG
+      - HNGC
+      - HBIO
+      - HBIOC
+
+    replaces:
+      - name: market for hydrogen, gaseous
+        product: hydrogen, gaseous
+

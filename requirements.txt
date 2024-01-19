@@ -1,0 +1,7 @@
+numpy
+pandas
+pyyaml
+schema
+premise
+datapackage
+git+https://github.com/brightway-lca/brightway2-io.git

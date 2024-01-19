@@ -1,0 +1,197 @@
+{
+    "profile": "data-package",
+    "name": "iea_hydrogen_scenarios",
+    "title": "Future environmental impacts of global hydrogen production",
+    "description": "Datapackage that implements technologies and market shares for future hydrogen production, on the basis on IEA projections (STEPS, ADS and NZE scenarios).",
+    "source":"Future environmental impacts of global hydrogen production (in review). Shijie Wei, Romain Sacchi, Arnold Tukker, Sangwon Suh, and Bernhard Steubing",
+    "version": "0.0.1",
+    "contributors":[
+        {
+        "title": "Shijie Wei",
+        "email": "s.j.wei@cml.leidenuniv.nl"
+        },
+        {
+        "title": "Romain Sacchi",
+        "email": "romain.sacchi@psi.ch"
+        }
+    ],
+    "dependencies": {
+        "premise": ">=1.8.1"
+    },
+    "ecoinvent": {
+        "version": "3.9",
+        "system model": "cut-off"
+    },
+    "scenarios": {
+        "Business as usual": [
+            {
+                "model": "remind",
+                "pathway": "SSP2-NDC"
+            },
+            {
+                "model": "image",
+                "pathway": "SSP2-Base"
+            }
+        ],
+        "Sustainable development": [
+            {
+                "model": "remind",
+                "pathway": "SSP2-PkBudg1150"
+            },
+            {
+                "model": "remind",
+                "pathway": "SSP1-PkBudg500"
+            }
+        ]
+    },
+    "licenses": [{
+    "id": "CC0-1.0",
+    "title": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }],
+    "resources": [
+        {
+            "path": "scenario_data/scenario_data.csv",
+            "profile": "tabular-data-resource",
+            "name": "scenario_data",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8-sig",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "model",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "pathway",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "scenario",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "region",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "variables",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "unit",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2020",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2025",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2030",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2035",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2040",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2045",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "2050",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        },
+        {
+            "path": "inventories/lci-hydrogen.xlsx",
+            "profile": "data-resource",
+            "name": "inventories",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "database",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "location",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "categories",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "unit",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "type",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "reference product",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        },
+        {
+            "path": "configuration_file/config.yaml",
+            "profile": "data-resource",
+            "name": "config",
+            "format": "yaml",
+            "mediatype": "text/yaml",
+            "encoding": "utf-8"
+        }
+    ]
+}

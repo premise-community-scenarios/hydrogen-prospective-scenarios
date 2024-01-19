@@ -3,21 +3,20 @@
 
 cff-version: 1.2.0
 title: >-
-  Boyce, J. C. (2022). Ammonia decarbonisation pathways
-  and their effects on life cycle assessments: Integrating
-  future ammonia scenarios into background data for prospective
-  LCAs. [Master’s Thesis, Leiden University and TU Delft]
+  Shijie Wei, Romain Sacchi, Arnold Tukker, Sangwon Suh, and Bernhard Steubing.
+  Future environmental impacts of global hydrogen production (in review).
 message: Please cite this dataset using these metadata.
 type: dataset
 authors:
-  - given-names: Johanna
-    family-names: Boyce
-    email: j.c.boyce@umail.leidenuniv.nl
+  - given-names: Shijie
+    family-names: Wei
+    email: s.j.wei@cml.leidenuniv.nl
     affiliation: >-
       Faculty of Science - Institute of environmental
       sciences (CML)
 repository-code: >-
-  https://github.com/premise-community-scenarios/ammonia-prospective-scenarios
+  https://github.com/premise-community-scenarios/hydrogen-prospective-scenarios
 abstract: >-
-  Scenario to integrate the future supply of
-  ammonia into the premise Python package
+  This datapackage implements technologies and market shares for future hydrogen production,
+  on the basis on IEA projections (STEPS, APS and NZE scenarios), combined with
+  the projections of global models such as REMIND.

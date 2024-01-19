@@ -79,8 +79,8 @@ How to use it?
                 {"model":"image", "pathway":"SSP2-Base", "year":2050,},
                 {"model":"image", "pathway":"SSP2-RCP19", "year":2030,},
             ],        
-            source_db="ecoinvent 3.8 cutoff",
-            source_version="3.8",
+            source_db="ecoinvent 3.9.1 cutoff",
+            source_version="3.9",
             key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
             external_scenarios=[
                 hydrogen, # <-- list datapackages here

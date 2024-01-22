@@ -27,17 +27,15 @@
             {
                 "model": "remind",
                 "pathway": "SSP2-NDC"
-            },
-            {
-                "model": "image",
-                "pathway": "SSP2-Base"
             }
         ],
-        "Sustainable development": [
+        "Ambitious": [
             {
                 "model": "remind",
                 "pathway": "SSP2-PkBudg1150"
-            },
+            }
+        ],
+        "Very ambitious": [
             {
                 "model": "remind",
                 "pathway": "SSP1-PkBudg500"

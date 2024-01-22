@@ -24,17 +24,16 @@ ecoinvent 3.9 cut-off
 IAM scenario compatibility
 ---------------------------
 
-The following coupling is done between IAM scenarios and the hydrogen market scenarios (APS):
+The following coupling is done between IAM scenarios and the hydrogen market scenarios from the IEA:
 
-| IAM scenario           | IEA scenario for H2 | Scenario                |
-|------------------------|---------------------|-------------------------|
-| IMAGE SSP1-Base        | STEPS               | Business As Usual       |
-| IMAGE SSP1-RCP19       | NZE                 | Sustainable development |
-| IMAGE SSP2-Base        | STEPS               | Business As Usual       |
-| IMAGE SSP2-RCP19       | NZE                 | Sustainable development |
-| REMIND SSP2-NDC        | APS                 | Sustainable development |
-| REMIND SSP2-PkBudg1150 | APS                 | Sustainable development |
-| REMIND SSP1-PkBudg500  | NZE                 | Sustainable development |
+| IAM scenario           | IEA scenario | Scenario          |
+|------------------------|--------------|-------------------|
+| REMIND SSP2-NDC        | SPS          | Business As Usual |
+| REMIND SSP2-PkBudg1150 | APS          | Ambitious         |
+| REMIND SSP1-PkBudg500  | NZE          | Very ambitious    |
+
+More details on the mapping between the IAM variables and the IEA hydrogen scenarios are available
+in the mapping `IAM-IEA.xlsx` file, under `others/hydrogen market`.
 
 What does this do?
 ------------------
@@ -45,14 +44,19 @@ Hydrogen
 
 The following market is introduced:
 
-* `market for hydrogen, electrolysis (APS)`
+* `market for hydrogen, gaseous (IEA)`
 
-It is supplied by two hydrogen production pathways:
-* AE (alkaline electrolysis), and 
-* PEM electrolysis
+And the following technologies feed into it:
 
-This market re-links to ammonia-producing activities 
-that consume hydrogen throughout the database.
+* Hydrogen, from coal gasification
+* Hydrogen, from coal gasification, with CCS
+* Hydrogen, from natural gas (SMR)
+* Hydrogen, from natural gas (SMR), with CCS
+* Hydrogen, from biomethane (SMR)
+* Hydrogen, from biomethane (SMR), with CCS
+* Hydrogen, from electrolysis (Alkaline)
+* Hydrogen, from electrolysis (Proton Exchange Membrane)
+* Hydrogen, from electrolysis (Solid Oxide)
 
 
 Flow diagram

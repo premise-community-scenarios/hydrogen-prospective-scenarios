@@ -4,7 +4,7 @@
     "title": "Future environmental impacts of global hydrogen production",
     "description": "Datapackage that implements technologies and market shares for future hydrogen production, on the basis on IEA projections (STEPS, ADS and NZE scenarios).",
     "source":"Future environmental impacts of global hydrogen production (in review). Shijie Wei, Romain Sacchi, Arnold Tukker, Sangwon Suh, and Bernhard Steubing",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "contributors":[
         {
         "title": "Shijie Wei",
@@ -16,32 +16,17 @@
         }
     ],
     "dependencies": {
-        "premise": ">=1.8.1"
+        "premise": ">=2.1.1"
     },
     "ecoinvent": {
-        "version": "3.9",
+        "version": "3.10",
         "system model": "cut-off"
     },
-    "scenarios": {
-        "Business as usual": [
-            {
-                "model": "remind",
-                "pathway": "SSP2-NDC"
-            }
-        ],
-        "Ambitious": [
-            {
-                "model": "remind",
-                "pathway": "SSP2-PkBudg1150"
-            }
-        ],
-        "Very ambitious": [
-            {
-                "model": "remind",
-                "pathway": "SSP1-PkBudg500"
-            }
-        ]
-    },
+    "scenarios": [
+        "Business as usual",
+        "Ambitious",
+        "Very ambitious"
+    ],
     "licenses": [{
     "id": "CC0-1.0",
     "title": "CC0 1.0",
@@ -57,16 +42,6 @@
             "encoding": "utf-8-sig",
             "schema": {
                 "fields": [
-                    {
-                        "name": "model",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "pathway",
-                        "type": "string",
-                        "format": "default"
-                    },
                     {
                         "name": "scenario",
                         "type": "string",

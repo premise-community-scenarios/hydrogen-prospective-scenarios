@@ -11,9 +11,9 @@ the projections of global models such as REMIND.
 Sourced from publication
 ------------------------
 
-*Future environmental impacts of global hydrogen production (in review).*
+*Future environmental impacts of global hydrogen production.*
 Shijie Wei, Romain Sacchi, Arnold Tukker, Sangwon Suh, and Bernhard Steubing.
-DOI to come.
+Energy Environ. Sci. (2024) doi:[10.1039/D3EE03875K](https://pubs.rsc.org/en/content/articlelanding/2024/ee/d3ee03875k)
 
 
 Ecoinvent database compatibility
@@ -42,7 +42,7 @@ What does this do?
 Hydrogen
 ********
 
-The following market is introduced:
+The following market is introduced for each region in the IAM scenarios:
 
 * `market for hydrogen, gaseous (IEA)`
 

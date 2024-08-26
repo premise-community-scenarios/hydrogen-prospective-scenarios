@@ -73,22 +73,22 @@ How to use it?
     from datapackage import Package
     
     
-    fp = r"filepath to datapackage.json"
+    fp = r"https://raw.githubusercontent.com/premise-community-scenarios/hydrogen-prospective-scenarios/main/datapackage.json"
     hydrogen = Package(fp)
     
     bw.projects.set_current("your_bw_project")
     
     ndb = NewDatabase(
             scenarios = [
-                {"model":"image", "pathway":"SSP2-Base", "year":2050,},
-                {"model":"image", "pathway":"SSP2-RCP19", "year":2030,},
+                {"model":"image", "pathway":"SSP2-Base", "year":2050, "external scenarios": [{"scenario": "Business as usual", "data": hydrogen}]},
+                {"model":"image", "pathway":"SSP2-RCP19", "year":2030, "external scenarios": [{"scenario": "Ambitious", "data": hydrogen}]},
+                {"model":"image", "pathway":"SSP1-19", "year":2020, "external scenarios": [{"scenario": "Very ambitious", "data": hydrogen}]},
             ],        
             source_db="ecoinvent 3.9.1 cutoff",
             source_version="3.9",
             key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-            external_scenarios=[
-                hydrogen, # <-- list datapackages here
-            ] 
         )
+
+    ndb.update("external") # or ndb.update() if you want to update the database with the IAM data plus the external scenario
 ```
 

@@ -8,6 +8,9 @@ This datapackage implements technologies and market shares for future hydrogen p
 on the basis on IEA projections (STEPS, APS and NZE scenarios), combined with
 the projections of global models such as REMIND.
 
+.. note::
+    If combined with a global IAM scenario, select REMIND as the IAM model.
+
 Sourced from publication
 ------------------------
 
@@ -80,9 +83,9 @@ How to use it?
     
     ndb = NewDatabase(
             scenarios = [
-                {"model":"image", "pathway":"SSP2-Base", "year":2050, "external scenarios": [{"scenario": "Business as usual", "data": hydrogen}]},
-                {"model":"image", "pathway":"SSP2-RCP19", "year":2030, "external scenarios": [{"scenario": "Ambitious", "data": hydrogen}]},
-                {"model":"image", "pathway":"SSP1-19", "year":2020, "external scenarios": [{"scenario": "Very ambitious", "data": hydrogen}]},
+                {"model":"remind", "pathway":"SSP2-Base", "year":2050, "external scenarios": [{"scenario": "Business as usual", "data": hydrogen}]},
+                {"model":"remind", "pathway":"SSP2-NPi", "year":2030, "external scenarios": [{"scenario": "Ambitious", "data": hydrogen}]},
+                {"model":"remind", "pathway":"SSP1-PkBudg500", "year":2020, "external scenarios": [{"scenario": "Very ambitious", "data": hydrogen}]},
             ],        
             source_db="ecoinvent 3.9.1 cutoff",
             source_version="3.9",

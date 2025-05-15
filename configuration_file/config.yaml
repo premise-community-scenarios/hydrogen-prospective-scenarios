@@ -29,7 +29,7 @@ production pathways:
   HWOPE:
     ecoinvent alias:
       exists in original database: false
-      name: hydrogen production, gaseous, 30 bar, wind onshore, pem
+      name: Hydrogen production, gaseous, 30 bar, wind onshore, pem
       reference product: hydrogen, gaseous, 30 bar, wind onshore, pem
       regionalize: True
     efficiency:

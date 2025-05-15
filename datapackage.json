@@ -23,9 +23,9 @@
         "system model": "cut-off"
     },
     "scenarios": [
-        "Business as usual",
-        "Ambitious",
-        "Very ambitious"
+        "Business as usual - remind",
+        "Ambitious - remind",
+        "Very ambitious - remind"
     ],
     "licenses": [{
     "id": "CC0-1.0",
